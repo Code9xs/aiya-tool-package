@@ -1,6 +1,7 @@
 # aiya-tool-package
 
-哎呀工具包 - 针对 RHEL 系列操作系统的自动化安装脚本集合
+> 哎呀工具包 - 针对 RHEL 系列操作系统的自动化安装脚本集合
+由于 github 限制，脚本包中未包含安装包文件，可自行下载对应的安装包文件，使用新的安装包后需要修改脚本中的对应脚本包信息。
 
 ## 项目简介
 
@@ -10,23 +11,14 @@
 
 ```
 aiya-tool-package/
-├── ServerInitShell/          # 服务器初始化脚本
-│   ├── install_jdk.sh       # JDK 安装脚本
-│   ├── set_network.sh       # 网络配置脚本
-│   ├── set-hostname.sh      # 主机名设置脚本
-│   ├── dns_register.sh      # DNS 注册脚本
-│   ├── os_init.sh           # 系统初始化脚本
-│   └── centos9stream_ali_yum.sh  # CentOS Stream 阿里云源配置
 │
 ├── monitor/                  # 监控系统相关组件
-│   ├── prometheus/          # Prometheus 监控系统
-│   ├── grafana/             # Grafana 可视化面板
-│   ├── alertmanager/        # 告警管理器
-│   ├── node-exporter/       # 节点监控导出器
-│   └── nginx-prometheus-exporter/  # Nginx 监控导出器
-│
-└── XiaoYuPaper/             # 小宇论文相关工具
-    └── Server/              # 服务器相关配置
+    ├── prometheus/          # Prometheus 监控系统
+    ├── grafana/             # Grafana 可视化面板
+    ├── alertmanager/        # 告警管理器
+    ├── node-exporter/       # 节点监控导出器
+    └── nginx-prometheus-exporter/  # Nginx 监控导出器
+
 ```
 
 ## 功能特性
@@ -49,6 +41,7 @@ aiya-tool-package/
    - AlertManager
    - Grafana
    - Nginx Exporter（如需要）
+3. 执行脚本包中的`install.sh`即可安装，执行`uninstall.sh`即可卸载
 
 ## 注意事项
 1. 所有脚本默认针对 RHEL 系列操作系统优化
