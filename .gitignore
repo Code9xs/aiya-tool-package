@@ -1,0 +1,12 @@
+# 忽略 IDE 配置文件目录
+.idea/
+# 忽略特定目录
+ServerInitShell/
+XiaoYuPaper/
+*.tar.gz
+*.tar.xz
+*.tar.bz2
+*.tar.7z
+*.tar.lzma
+*.tar.lz
+*.tar.lzo
